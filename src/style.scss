@@ -1,0 +1,49 @@
+@import "var";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $header-bg-color;
+  color: $header-text-color;
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav-1 {
+    color: grey;
+    font-size: 13px;
+    justify-content: flex-end;
+    i {
+      color: #28acff;
+    }
+    > * {
+      margin-right: 20px;
+      padding: $header-padding;
+      cursor: pointer;
+    }
+  }
+  .nav-2 {
+    font-size: $header-text-size;
+    img {
+      width: 100px;
+    }
+    i {
+      color: grey;
+    }
+    > * {
+      margin-right: 35px;
+      padding: $header-padding;
+      cursor: pointer;
+    }
+  }
+}
