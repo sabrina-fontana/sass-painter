@@ -1,4 +1,22 @@
-$header-bg-color: black;
-$header-text-color: white;
-$header-text-size: 14px;
-$header-padding: 10px 0;
+$small-text-size: 13.5px;
+$jumbotron-bg-image: "../img/hero-pe-8.jpg";
+$text-size: 18px;
+@mixin bold-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+$title-size: 27px;
+$small-title-size: 21px;
+@mixin buy-button {
+  font-size: 16px;
+  background: $buy-btn-bg-color;
+  padding: 10px 40px;
+  color: $light-text-color;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: $buy-btn-hover-bg-color;
+  }
+}
+$section-1-title-bg-image: "../img/intro-top.jpg";
+$section-1-bg-image: "../img/intro-bg.jpg";

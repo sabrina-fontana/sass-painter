@@ -11,7 +11,7 @@
 }
 
 header {
-  background-color: black;
+  background-color: #181818;
   color: white;
 }
 header nav {
@@ -20,28 +20,141 @@ header nav {
 }
 header .nav-1 {
   color: grey;
-  font-size: 13px;
   justify-content: flex-end;
 }
 header .nav-1 i {
   color: #28acff;
+  font-size: 18px;
+  margin-right: 5px;
 }
 header .nav-1 > * {
   margin-right: 20px;
   padding: 10px 0;
   cursor: pointer;
 }
-header .nav-2 {
-  font-size: 14px;
+header .nav-1 > *:hover {
+  color: white;
+  text-decoration: underline;
 }
 header .nav-2 img {
-  width: 100px;
+  width: 90px;
+  margin-right: 10px;
 }
 header .nav-2 i {
-  color: grey;
+  color: #aaaaaa;
 }
 header .nav-2 > * {
-  margin-right: 35px;
-  padding: 10px 0;
   cursor: pointer;
+}
+header .nav-2 div {
+  padding: 18px 24px;
+}
+header .nav-2 div:hover {
+  background-color: #eeeeee;
+  color: black;
+}
+
+main .jumbotron {
+  height: 460px;
+  background-image: url("../img/hero-pe-8.jpg");
+  background-position: left -340px top;
+}
+main .jumbotron-container {
+  display: flex;
+  justify-content: flex-end;
+}
+main .jumbotron-container .jumbotron-text {
+  width: 500px;
+  margin-top: 40px;
+}
+main .jumbotron-container .jumbotron-text > * {
+  margin: 10px 0;
+}
+main .jumbotron-container .jumbotron-text span {
+  color: #bb53bd;
+  font-style: italic;
+  margin-right: 5px;
+}
+main .jumbotron-container .jumbotron-text ul {
+  list-style: none;
+}
+main .jumbotron-container .jumbotron-text li {
+  padding: 5px 0;
+}
+main .jumbotron-container .jumbotron-text li i {
+  color: grey;
+  font-size: 18px;
+  margin-right: 5px;
+}
+main .jumbotron-container .jumbotron-text .trial-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+main .jumbotron-container .jumbotron-text .trial-button i {
+  font-size: 30px;
+}
+main .jumbotron-container .buy-section {
+  background: #181818;
+  width: 400px;
+  height: 440px;
+  margin-top: 20px;
+  padding: 15px;
+}
+main .jumbotron-container .buy-section-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+main .jumbotron-container .buy-section button {
+  font-size: 16px;
+  background: #009cff;
+  padding: 10px 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+main .jumbotron-container .buy-section button:hover {
+  background: #28acff;
+}
+main nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+}
+main nav div {
+  padding: 18px 24px;
+  font-size: 18px;
+}
+main nav div:hover {
+  background-color: #eeeeee;
+}
+main .section-1-title {
+  background-image: url("../img/intro-top.jpg");
+  height: 200px;
+}
+
+.small-text {
+  font-size: 13.5px;
+}
+
+.bold-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 27px;
+}
+
+.small-title {
+  font-size: 21px;
 }

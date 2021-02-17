@@ -1,4 +1,5 @@
 @import "var";
+@import "colors";
 
 * {
   box-sizing: border-box;
@@ -13,37 +14,146 @@
 }
 
 header {
-  background-color: $header-bg-color;
-  color: $header-text-color;
+  background-color: $dark-bg-color;
+  color: $light-text-color;
   nav {
     display: flex;
     align-items: center;
   }
   .nav-1 {
     color: grey;
-    font-size: 13px;
     justify-content: flex-end;
     i {
       color: #28acff;
+      font-size: 18px;
+      margin-right: 5px;
     }
     > * {
       margin-right: 20px;
-      padding: $header-padding;
+      padding: 10px 0;
       cursor: pointer;
+    }
+    > *:hover {
+      color: $light-text-color;
+      text-decoration: underline;
     }
   }
   .nav-2 {
-    font-size: $header-text-size;
     img {
-      width: 100px;
+      width: 90px;
+      margin-right: 10px;
     }
     i {
-      color: grey;
+      color: #aaaaaa;
     }
     > * {
-      margin-right: 35px;
-      padding: $header-padding;
       cursor: pointer;
     }
+    div {
+      padding: 18px 24px;
+    }
+    div:hover {
+      background-color: $nav-hover-color;
+      color: black;
+    }
   }
+}
+
+main {
+  .jumbotron {
+    height: 460px;
+    background-image: url($jumbotron-bg-image);
+    background-position: left -340px top;
+    &-container {
+      display: flex;
+      justify-content: flex-end;
+      .jumbotron-text {
+        width: 500px;
+        margin-top: 40px;
+        > * {
+          margin: 10px 0;
+        }
+        span {
+          color: #bb53bd;
+          font-style: italic;
+          margin-right: 5px;
+        }
+        ul {
+          list-style: none;
+        }
+        li {
+          padding: 5px 0;
+          i {
+            color: grey;
+            font-size: $text-size;
+            margin-right: 5px;
+          }
+        }
+        .trial-button {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 230px;
+          border: 2px solid black;
+          padding: 10px 15px;
+          cursor: pointer;
+          margin-top: 25px;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+      .buy-section {
+        background: $dark-bg-color;
+        width: 400px;
+        height: 440px;
+        margin-top: 20px;
+        padding: 15px;
+        &-text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $light-text-color;
+        }
+        button {
+          @include buy-button;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $nav-bg-color;
+    div {
+      padding: 18px 24px;
+      font-size: $text-size;
+    }
+    div:hover {
+      background-color: $nav-hover-color;
+    }
+  }
+  .section-1 {
+    &-title {
+      background-image: url($section-1-title-bg-image);
+      height: 200px;
+    }
+  }
+}
+.small-text {
+  font-size: $small-text-size;
+}
+
+.bold-title {
+  @include bold-title;
+}
+
+.title {
+  font-size: $title-size;
+}
+
+.small-title {
+  font-size: $small-title-size;
 }
