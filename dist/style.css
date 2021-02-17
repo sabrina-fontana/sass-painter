@@ -10,6 +10,27 @@
   margin: 0 auto;
 }
 
+.small-text {
+  font-size: 13.5px;
+}
+
+.bold-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.box-title {
+  font-size: 34px;
+}
+
+.title {
+  font-size: 27px;
+}
+
+.small-title {
+  font-size: 21px;
+}
+
 header {
   background-color: #181818;
   color: white;
@@ -54,6 +75,9 @@ header .nav-2 div:hover {
   color: black;
 }
 
+main {
+  font-size: 17px;
+}
 main .jumbotron {
   height: 460px;
   background-image: url("../img/hero-pe-8.jpg");
@@ -83,7 +107,7 @@ main .jumbotron-container .jumbotron-text li {
 }
 main .jumbotron-container .jumbotron-text li i {
   color: grey;
-  font-size: 18px;
+  font-size: 17px;
   margin-right: 5px;
 }
 main .jumbotron-container .jumbotron-text .trial-button {
@@ -132,7 +156,7 @@ main nav {
 }
 main nav div {
   padding: 18px 24px;
-  font-size: 18px;
+  font-size: 17px;
 }
 main nav div:hover {
   background-color: #eeeeee;
@@ -140,21 +164,33 @@ main nav div:hover {
 main .section-1-title {
   background-image: url("../img/intro-top.jpg");
   height: 200px;
+  text-align: center;
+  padding-top: 70px;
 }
-
-.small-text {
-  font-size: 13.5px;
+main .section-1-title .bold-title {
+  padding-bottom: 20px;
 }
-
-.bold-title {
-  font-size: 30px;
-  font-weight: 700;
+main .section-1-content {
+  overflow-x: hidden;
 }
-
-.title {
-  font-size: 27px;
+main .section-1-content > img {
+  position: relative;
+  right: 330px;
 }
-
-.small-title {
-  font-size: 21px;
+main .section-1-content .container {
+  background-image: url("../img/flow-icons-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+}
+main .section-1-content .container img {
+  width: 200px;
+  margin: 15px 0;
+}
+main .section-1-content .container .block {
+  text-align: center;
+  margin: 50px 0;
+}
+main .section-1-content .container .block > div {
+  padding: 15px 25px;
 }

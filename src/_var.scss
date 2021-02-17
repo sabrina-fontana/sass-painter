@@ -1,8 +1,8 @@
 $small-text-size: 13.5px;
 $jumbotron-bg-image: "../img/hero-pe-8.jpg";
-$text-size: 18px;
+$text-size: 17px;
 @mixin bold-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
 }
 $title-size: 27px;
@@ -19,4 +19,5 @@ $small-title-size: 21px;
   }
 }
 $section-1-title-bg-image: "../img/intro-top.jpg";
-$section-1-bg-image: "../img/intro-bg.jpg";
+$section-1-bg-image: "../img/flow-icons-bg.png";
+$box-title-size: 34px;

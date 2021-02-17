@@ -1,5 +1,5 @@
-@import "var";
-@import "colors";
+@import "_var";
+@import "_colors";
 
 * {
   box-sizing: border-box;
@@ -11,6 +11,25 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+.small-text {
+  font-size: $small-text-size;
+}
+
+.bold-title {
+  @include bold-title;
+}
+
+.box-title {
+  font-size: $box-title-size;
+}
+
+.title {
+  font-size: $title-size;
+}
+
+.small-title {
+  font-size: $small-title-size;
 }
 
 header {
@@ -60,6 +79,7 @@ header {
 }
 
 main {
+  font-size: $text-size;
   .jumbotron {
     height: 460px;
     background-image: url($jumbotron-bg-image);
@@ -139,21 +159,35 @@ main {
     &-title {
       background-image: url($section-1-title-bg-image);
       height: 200px;
+      text-align: center;
+      padding-top: 70px;
+      .bold-title {
+        padding-bottom: 20px;
+      }
+    }
+    &-content {
+      overflow-x: hidden;
+      > img {
+        position: relative;
+        right: 330px;
+      }
+       .container {
+        background-image: url($section-1-bg-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        img {
+          width: 200px;
+          margin: 15px 0;
+        }
+        .block {
+          text-align: center;
+          margin: 50px 0;
+          > div {
+            padding: 15px 25px;
+          }
+        }
+      }
     }
   }
-}
-.small-text {
-  font-size: $small-text-size;
-}
-
-.bold-title {
-  @include bold-title;
-}
-
-.title {
-  font-size: $title-size;
-}
-
-.small-title {
-  font-size: $small-title-size;
 }
